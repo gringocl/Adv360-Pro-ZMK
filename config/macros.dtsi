@@ -1,23 +1,9 @@
-  macro_lpar: macro_lpar {
-    label = "macro_lpar";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-      = <&kp LPAR>
-      ;
-  };
-  macro_rpar: macro_rpar {
-    label = "macro_rpar";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-      = <&kp RPAR>
-      ;
-  };
   macro_lbkt: macro_lbkt {
     label = "macro_lbkt";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <0>;
+    tap-ms = <30>;
     bindings
       = <&kp LBKT>
       ;
@@ -26,6 +12,8 @@
     label = "macro_rbkt";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <0>;
+    tap-ms = <30>;
     bindings
       = <&kp RBKT>
       ;
@@ -34,6 +22,8 @@
     label = "macro_lbrc";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <0>;
+    tap-ms = <30>;
     bindings
       = <&kp LBRC>
       ;
@@ -42,6 +32,8 @@
     label = "macro_rbrc";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <0>;
+    tap-ms = <30>;
     bindings
       = <&kp RBRC>
       ;
