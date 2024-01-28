@@ -24,7 +24,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
     &kp EQUAL      &kp N1    &kp N2   &kp N3   &kp N4    &kp N5 &tog KEYPAD                                                                      &mo MOD     &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
@@ -84,6 +83,5 @@
     &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none      &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
             >;
         };
-
     };
 };
