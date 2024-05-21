@@ -49,7 +49,7 @@
         &trans &trans &trans      &trans      &trans    &trans    &trans                                                           &trans &trans    &trans   &trans      &trans      &trans    &trans
         &trans &trans &trans      &trans      &trans    &trans    &trans                                                           &trans &trans    &trans   &kp PLUS    &trans      &trans    &trans
         &trans &trans &macro_lbkt &macro_lbrc &kp LPAR  &kp EQUAL &trans        &kp RALT &trans               &trans &trans        &trans &kp MINUS &kp RPAR &macro_rbrc &macro_rbkt &kp UNDER &trans
-        &trans &trans &trans      &kp TILDE   &kp GRAVE &trans           &trans &trans   &trans &trans &trans &trans &trans &trans        &trans    &kp PIPE &kp LT      &kp GT      &trans    &trans
+        &trans &trans &trans      &kp TILDE   &kp GRAVE &trans           &trans &trans   &trans               &trans &trans &trans        &trans    &kp PIPE &kp LT      &kp GT      &trans    &trans
         &trans &trans &trans      &trans      &trans                     &trans &trans   &trans               &trans &trans &trans                  &trans   &trans      &trans      &trans    &trans
       >;
     };
