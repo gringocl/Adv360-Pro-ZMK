@@ -11,14 +11,21 @@
 #define FN      4
 #define MOD     5
 
-&lt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <300>;
-};
-
 / {
     behaviors {
         #include "macros.dtsi"
+
+        st: symbol_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
+            bindings = <&mo>, <&kp>;
+            // This must be updated if a new key is added to the symbol layer.
+            // This ensures that any other key pressed triggers the tap behavior,
+            // rather than the hold behavior. - Aaron, Thu May 23 2024
+            hold-trigger-key-positions = <24 30 31 32 33 40 41 42 43 44 49 50 55 56 57>;
+        };
     };
 
     keymap {
@@ -28,7 +35,7 @@
             bindings = <
     &kp EQUAL      &kp N1    &kp N2   &kp N3   &kp N4    &kp N5 &tog KEYPAD                                                                      &mo MOD     &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
     &kp TAB        &kp Q     &kp W    &kp F    &kp P     &kp B  &kp C_VOL_UP                                                                     &tog QWERTY &kp J  &kp L    &kp U     &kp Y    &kp SEMI &kp BSLH
-    &lt SYMBOL ESC &kp A     &kp R    &kp S    &kp T     &kp G  &kp C_VOL_DN          &kp LALT  &kp RC(RA(RGUI))     &kp DEL   &kp BSPC          &kp C_MUTE  &kp M  &kp N    &kp E     &kp I    &kp O    &kp SQT
+    &st SYMBOL ESC &kp A     &kp R    &kp S    &kp T     &kp G  &kp C_VOL_DN          &kp LALT  &kp RC(RA(RGUI))     &kp DEL   &kp BSPC          &kp C_MUTE  &kp M  &kp N    &kp E     &kp I    &kp O    &kp SQT
     &kp LSHFT      &kp Z     &kp X    &kp C    &kp D     &kp V                                  &kp RS(RC(RA(RGUI))) &kp PG_UP                               &kp K  &kp H    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
     &mo FN         &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                     &kp LGUI &kp LCTRL &kp SPACE            &kp PG_DN &kp RET &kp SPACE                    &kp DOWN &kp UP    &kp LBKT &kp RBKT &mo FN
            >;
