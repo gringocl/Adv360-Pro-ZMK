@@ -24,7 +24,7 @@
           // This must be updated if a new key is added to the symbol layer.
           // This ensures that any other key pressed triggers the tap behavior,
           // rather than the hold behavior. - Aaron, Thu May 23 2024
-          hold-trigger-key-positions = <24 30 31 32 33 40 41 42 43 44 49 50 55 56 57>;
+          hold-trigger-key-positions = <24 30 31 32 33 40 41 42 43 44 49 50 55 56 57 59>;
       };
     };
 
